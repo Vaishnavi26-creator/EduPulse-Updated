@@ -1,0 +1,40 @@
+{
+  "project_name": "Student Academic Performance & At-Risk Early Warning System",
+  "target": "At_Risk",
+  "positive_class": 1,
+  "positive_class_label": "At Risk",
+  "selected_model": "Logistic Regression",
+  "feature_columns": [
+    "Department",
+    "Year_of_Study",
+    "Semester",
+    "Previous_Semester_GPA",
+    "Attendance_Percentage",
+    "Classes_Missed",
+    "Internal_Marks_Out_of_30",
+    "Assignment_Score_Percentage",
+    "Quiz_Average_Percentage",
+    "Study_Hours_Per_Week",
+    "Assignment_Submission_Rate_Percentage",
+    "Late_Submissions_Count",
+    "Backlogs_Count",
+    "LMS_Login_Count_Per_Month",
+    "Attendance_Trend"
+  ],
+  "excluded_columns": [
+    "At_Risk",
+    "Communication_Skills_Marks",
+    "Core_Subject_1_Marks",
+    "Core_Subject_2_Marks",
+    "Mathematics_Marks",
+    "Practical_Lab_Marks",
+    "Risk_Level",
+    "Student_ID",
+    "Subject_Marks_Average",
+    "Subjects_Below_40_Count"
+  ],
+  "random_state": 42,
+  "test_size": 0.2,
+  "selection_rule": "Highest mean cross-validated recall for At Risk, tie-broken by mean F1",
+  "caveat": "Validate dataset provenance and label-generation process; test metrics do not establish real-world validity."
+}
